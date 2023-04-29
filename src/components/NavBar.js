@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -10,12 +10,19 @@ function NavBar() {
         marginBottom: "12px",
       }}
     >
-      <NavLink style={{ marginRight: "10px" }} to="/">
-        Home
-      </NavLink>
-      <NavLink style={{ marginRight: "10px" }} to="/movies">
-        Movies
-      </NavLink>
+
+<nav>
+      <ul>
+        <li>
+          <Link style={{ marginRight: "10px" }} to="/">Home</Link>
+        </li>
+        <li>
+          <Link style={{ marginRight: "10px" }} to="/movies">Movies</Link>
+        </li>
+      </ul>
+    </nav>
+
+     
     </div>
   );
 }
